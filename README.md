@@ -1,7 +1,7 @@
 Mega Project List
 ========
 
-** My implementation is in the branch [「mine」](https://github.com/zippera/Projects/tree/mine)! **
+**My implementation is in the branch [「mine」](https://github.com/zippera/Projects/tree/mine)!**
 
 
 A list of practical projects that anyone can solve in any programming language (See [solutions](https://github.com/thekarangoel/Projects-Solutions)). These projects are divided in multiple categories, and each category has it's own folder.

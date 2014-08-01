@@ -27,15 +27,24 @@ def main():
         print "Invalid input.  Exiting..."
         exit(0)
 
-    if method == 1:
-        print "Calculating pi using the Gregory-Leibniz series..."
-    elif method == 2:
-        print "Calculating pi using the Nilakantha series..."
-    elif method == 3:
-        print "Calculating pi using the Chudnovsky algorithm..."
+    n = raw_input("How many numbers do you need? ")
+    try:
+        n = int(n)
+    except ValueError:
+        print "Invalid input.  Exiting..."
+        exit(0)
+    if n > 0:
+        if method == 1:
+            print "Calculating pi using the Gregory-Leibniz series..."
+        elif method == 2:
+            print "Calculating pi using the Nilakantha series..."
+        elif method == 3:
+            print "Calculating pi using the Chudnovsky algorithm..."
+        else:
+            print "Invalid option.  Exiting..."
     else:
-        print "Invalid option.  Exiting..."
-        exit(1)
+        print "You must enter a number larger than 0.  Try again..."
+        main()
 
 if __name__ == "__main__":
     main()

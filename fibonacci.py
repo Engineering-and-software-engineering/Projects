@@ -1,7 +1,11 @@
 #!/usr/bin/python
 
+"""
+**Fibonacci Sequence** - Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.
+"""
+
 def fibonnaciSequence(n):
-    assert n > 0, \ "Number must be greater than 0"
+    assert n > 0
 
     sequence = [1]  # Initialize sequence to 1
     while len(sequence) < n:

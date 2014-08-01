@@ -24,7 +24,18 @@ def fibonnaciSequence(n):
     return (', '.join(sequence))
 
 def main():
-    print(fibonnaciSequence(int(input('How many numbers do you need? '))))
+    n = raw_input('How many numbers do you need? ')
+    try:
+        n = int(n)
+    except ValueError:
+        print "Invalid input.  Exiting..."
+        exit(0)
+
+    if n > 0:
+        print fibonnaciSequence(n)
+    else:
+        print "You must enter a number larger than 0.  Try again..."
+        main()
 
 if __name__ == "__main__":
     main()

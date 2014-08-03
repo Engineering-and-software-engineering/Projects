@@ -10,4 +10,6 @@ Classic Algorithms
 [Collatz Conjecture](https://github.com/JoaoGFarias/Projects/blob/master/Python/Classic%20Algorithms/CollatzConjecture.py)
 
 Text
+-----------------
+
 [Reverse String](https://github.com/JoaoGFarias/Projects/blob/master/Python/Text/ReverseString.py)

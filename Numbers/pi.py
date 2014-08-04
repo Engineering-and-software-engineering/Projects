@@ -11,8 +11,6 @@ that many decimal places. Keep a limit to how far the program will go.
 def gregory_leibniz_series(n):
     assert n > 0
 
-    getcontext().prec = n
-
     pi = Decimal(1)
     limit = 10000
 
@@ -36,6 +34,21 @@ def gregory_leibniz_series(n):
 def nilakantha_series(n):
     assert n > 0
 
+    pi = Decimal(3)
+    limit = 10000
+    step = 2
+
+    print
+    print "Nilakantha Series\n"
+    print "pi = 3 + 4 / (2 * 3 * 4) - 4 / (4 * 5 * 6) + 4 / (6 * 7 * 8) -...\n"
+    print "The Nilakantha series converges much quick than the Gregory-Leibniz series"
+    print "Calculating pi to %d decimal places using the Nilakantha series. . . \n" % n
+
+    for i in range(2, limit, 2):
+        pi += (Decimal(4) * Decimal(-1) ** Decimal(step)) / (Decimal(i) * Decimal(i+1) * Decimal(i+2))
+        step += 1
+    return pi
+    
 def chudnovsky_algorithm(n):
     assert n > 0
 
@@ -60,10 +73,11 @@ def main():
         exit(0)
     if n > 0:
         getcontext().prec = n
+
         if method == 1:
             pi = gregory_leibniz_series(n)
         elif method == 2:
-            print "Calculating pi using the Nilakantha series..."
+            pi = nilakantha_series(n)
         elif method == 3:
             print "Calculating pi using the Chudnovsky algorithm..."
         elif method == 4:

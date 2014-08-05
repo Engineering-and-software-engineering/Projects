@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import math
 from decimal import *
+from time import time
 
 """
 **Find PI to the Nth Digit**
@@ -23,12 +24,15 @@ def gregory_leibniz_series(n):
 
     print "Calculating pi to %d decimal places using the Gregory-Leibniz series. . . \n" % n
     
+    start = time()
+
     for i in range(2, limit, 1):
         #pi += ((-1.0) ** (i + 1.0)) / (2.0 * i - 1.0)
         pi += (Decimal(-1) ** (Decimal(i) + Decimal(1))) / (Decimal(2) * Decimal(i) - Decimal(1))
 
     pi = Decimal(4) * Decimal(pi)
 
+    print "Time: %.2f seconds" % (time() - start)
     return pi
 
 def nilakantha_series(n):
@@ -44,9 +48,14 @@ def nilakantha_series(n):
     print "The Nilakantha series converges much quick than the Gregory-Leibniz series"
     print "Calculating pi to %d decimal places using the Nilakantha series. . . \n" % n
 
+    start = time()
+
     for i in range(2, limit, 2):
         pi += (Decimal(4) * Decimal(-1) ** Decimal(step)) / (Decimal(i) * Decimal(i+1) * Decimal(i+2))
         step += 1
+
+    print "Time: %.2f seconds" % (time() - start)
+
     return pi
     
 def chudnovsky_algorithm(n):

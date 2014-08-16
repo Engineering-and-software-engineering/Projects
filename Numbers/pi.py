@@ -58,14 +58,10 @@ def nilakantha_series(n):
 
     return pi
     
-def chudnovsky_algorithm(n):
-    assert n > 0
-
 def main():
     print "1) Gregory-Leibniz Series\n"
     print "2) Nilakantha Series\n"
-    print "3) Chudnovsky Algorithm\n"
-    print "4) Built in math library\n"
+    print "3) Built in math library\n"
 
     method = raw_input("Which method would you like to use? ")
     try:
@@ -88,8 +84,6 @@ def main():
         elif method == 2:
             pi = nilakantha_series(n)
         elif method == 3:
-            print "Calculating pi using the Chudnovsky algorithm..."
-        elif method == 4:
             print "Calculating pi using the built in math library..."
             pi = math.pi
         else:

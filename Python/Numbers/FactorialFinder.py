@@ -28,7 +28,30 @@ def factIter(num):
 
 	return result
 
+def factRecur(num):
+	"""
+	Calculates the factorial of a given natural number recursively.
+
+    Keyword arguments:
+    num -- the natural number
+    """
+	def factRecurAux(acc,num):
+		if num == 1:
+			return acc
+		else:
+			return factRecurAux(acc*num, num-1)
+	if num == 0:
+		return 1
+	else:
+		return factRecurAux(1,num)
+
+
 assert factIter(0) == 1
 assert factIter(1) == 1
 assert factIter(5) == 120
 assert factIter(15) == 1307674368000
+
+assert factRecur(0) == 1
+assert factRecur(1) == 1
+assert factRecur(5) == 120
+assert factRecur(15) == 1307674368000

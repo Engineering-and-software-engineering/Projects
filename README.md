@@ -1,6 +1,12 @@
 Mega Project List
 ========
 
+## STUFF I HAVE DONE!
+
+**Find Cost of Tile to Cover W x H Floor** - Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user.
+
+this is in the swift tile directory
+
 A list of practical projects that anyone can solve in any programming language (See [solutions](https://github.com/thekarangoel/Projects-Solutions)). These projects are divided in multiple categories, and each category has its own folder.
 
 To get started, simply fork this repo.
@@ -52,7 +58,7 @@ Numbers
 
 **Next Prime Number** - Have the program find prime numbers until the user chooses to stop asking for the next one.
 
-**Find Cost of Tile to Cover W x H Floor** - Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user.
+
 
 **Mortgage Calculator** - Calculate the monthly payments of a fixed term mortgage over given Nth terms at a given interest rate. Also figure out how long it will take the user to pay back the loan. For added complexity, add an option for users to select the compounding interval (Monthly, Weekly, Daily, Continually).
 

@@ -1,6 +1,5 @@
 class PigLatin
 =begin
-end
         Author : Jessica Valenti
         September 1, 2015
         Script created to "translate" English words into pig latin (based on the pig latin wikipedia page) - in response to Karan's list of projects

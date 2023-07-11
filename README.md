@@ -1,3 +1,9 @@
+Kristopher Gates's Fork of the Mega Project List
+========
+
+This is where I've kept my implementations of Karan Goel's project ideas repo.
+
+
 Mega Project List
 ========
 

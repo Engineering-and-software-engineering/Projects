@@ -7,6 +7,9 @@ This is where I've kept my implementations of Karan Goel's project ideas repo.
 Mega Project List
 ========
 
+**My implementation is in the branch [「mine」](https://github.com/zippera/Projects/tree/mine)!**
+
+
 ## STUFF I HAVE DONE!
 
 **Find Cost of Tile to Cover W x H Floor** - Calculate the total cost of tile it would take to cover a floor plan of width and height, using a cost entered by the user.
